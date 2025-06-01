@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethiopian Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ethiopian Language Translator</h1>
+        
+        <div class="translator-box">
+            <div class="input-section">
+                <textarea id="inputText" placeholder="Enter text to translate..."></textarea>
+                <select id="sourceLang">
+                    <option value="auto">Detect Language</option>
+                    <option value="en">English</option>
+                    <option value="am">Amharic</option>
+                    <option value="tr">Tigrinya</option>
+                </select>
+            </div>
+            
+            <div class="controls">
+                <button id="translateBtn">Translate</button>
+                <div class="swap-btn" id="swapBtn">⇄</div>
+            </div>
+            
+            <div class="output-section">
+                <textarea id="outputText" placeholder="Translation will appear here..." readonly></textarea>
+                <select id="targetLang">
+                    <option value="en">English</option>
+                    <option value="am" selected>Amharic</option>
+                    <option value="tr">Tigrinya</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="loading" id="loading">Translating...</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
